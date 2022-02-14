@@ -13,12 +13,12 @@ int main()
 
     while((c = getchar()) != EOF)
     {
-        if (c >= '!' && c <= '~') charLength[c - '!']++;
+        if (c >= FIRST_CHAR && c <= LAST_CHAR) charLength[c - FIRST_CHAR]++;
     }
 
     for (int i=0; i<NumOfChars; i++)
     {
-        printf("\n|%c|", '!'+i);
+        printf("\n|%c|", FIRST_CHAR + i);
         for (int j=0; j<charLength[i]; j++) putchar('*');
     }
     putchar('\n');
