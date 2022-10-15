@@ -19,6 +19,7 @@ int main(void) {
 void itoa(int n, char s[])
 {
     int i, sign;
+    sign = n;
     
     i = 0;
     do {
